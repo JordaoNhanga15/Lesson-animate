@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+body{
+    background-color: #7159c1;
+}
+
+.form-section{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-65%);
+    padding: 0;
+}
+.form-section h1{
+    margin-bottom: 60px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 900;
+}
+#form-wrapper{
+    border-radius: 10px;
+    box-sizing: border-box;
+    width:340px;
+    height: 300px;
+}
+#form-wrapper form{
+    padding: 5px 25px 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, .5);
+    background-color: #fff;
+    border-radius: 10px;
+}
+#form-wrapper form .input-block{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px 0;
+}
+#form-wrapper form .input-block label{
+    width: 100%;
+    padding: 10px 0;
+    font-weight: bold;
+}
+#form-wrapper form .input-block input{
+    width: 100%;
+    padding: 5px 0;
+    line-height: 1;
+    outline: none;
+}
+
+#form-wrapper form  #submit{
+    display: block;
+    background: #7159c1;
+    justify-content: center;
+    margin: auto;
+    padding: 10px 79px;
+    color: #fff;
+    border-radius: 20px;
+    outline: none;
+    transition: 1s background ease;
+}
+#form-wrapper form  #submit:hover{
+    background: black;
+    color: white;
+}
+
+#form-wrapper form {
+    animation-name: fade;
+    animation-duration: 1s;
+}
+
+@keyframes fade{
+     from{
+        opacity: 0;
+     }
+     to{
+        opacity: 1;
+     }
+}
